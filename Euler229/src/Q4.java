@@ -2,14 +2,14 @@
 public class Q4 {
 
 	public static void main(String[] args) {
-		long mp=1;long max=0;
+		long max=0;
 		for(int i=999;i>=100;i--)
 		{
 			for(int j=999;j>=100;j--)
 			{
 				int k=i*j;
 				long c=palin(i*j);
-				if(k==c && k>mp)
+				if(c==k && c>max)
 					max=k;
 			}
 		}
