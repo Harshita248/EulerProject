@@ -7,11 +7,12 @@ public class Q9 {
 			for(int b=a+1;b<1000;b++)
 			{
 				int csq=(int)(Math.pow(a,2)+Math.pow(b,2));
-				int c=(int)Math.sqrt(csq);
+				int c=1000-a-b;
+				int d=(int)Math.pow(c,2);
 			
-				if(a+b+c==1000)
+				if(d==csq)
 				{
-					System.out.println("Value of (abc)= "+(a*b*c));
+					System.out.println("Value of (abc)= "+d);
 					break;
 			}
 		
